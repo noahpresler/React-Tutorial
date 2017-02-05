@@ -30,7 +30,7 @@ On the left you'll see HTML, and on the right is Javascript – through this who
 
 In the JS side, click the chevron next to the line ```let memes = ....``` to collapse that variable so it takes up less space. It is a list of memes we will use later in the tutorial, but you will never edit it, so keep it collapsed for ease of coding.
 
-Swag, that's the whole setup. Time for step 0! 
+Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so just be sure to use our class names :)
 
 # Step 0: Hello World
 # Step 1: My First Meme
