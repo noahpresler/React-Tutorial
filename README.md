@@ -6,7 +6,7 @@ The Semester.ly team's ReactJS Tutorial (by Facebook) delivered at a HopHacks Sp
 
 By the end of this tutorial you will have built a web app which will allow you to add random memes, upvote and downvote them, all from React. It will look just like the image you see to the right :D
 
-**Best part is, you don't need to install anything!**
+**Best part is, you don't need to install anything!** It doesn't matter what OS you have – all you need is a browser.
 
 We have everything set up for you in a collection of CodePens. If you ever get lost or confused, you can take a look at the code pen with the solution for that step or just use it to go forward and follow along.
 
