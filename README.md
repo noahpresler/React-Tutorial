@@ -29,3 +29,14 @@ It should look like the screenshot to the right.
 On the left you'll see HTML, and on the right is Javascript – through this whole application you'll actually never change the HTML, we will create this all purely from Javascript.
 
 In the JS side, click the chevron next to the line ```let memes = ....``` to collapse that variable so it takes up less space. It is a list of memes we will use later in the tutorial, but you will never edit it, so keep it collapsed for ease of coding.
+
+Swag, that's the whole setup. Time for step 0! 
+
+# Step 0: Hello World
+# Step 1: My First Meme
+# Step 2: The Meme Component
+# Step 3: The Mapping of the Memes
+# Step 4: Upvotes and Downvotes
+# Step 5: Setting State & OnClick
+# Step 6: Adding New Memes
+# Step 7: React LifeCycle & ComponenetDidUpdate
