@@ -1,5 +1,4 @@
-# React Tutorial by Semester.ly
-The Semester.ly team's ReactJS Tutorial (by Facebook) delivered at a HopHacks Spring 2017 workshop! 
+# Welcome to the React Tutorial!
 
 # How This Shindig Will Go
 <img align="left" src="http://i.imgur.com/cyEEJiw.png" width="240px">
