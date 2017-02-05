@@ -1,6 +1,4 @@
-# Welcome to the React Tutorial!
-
-# How This Shindig Will Go
+# Welcome – Here Is How This Shindig Will Go
 <img align="left" src="http://i.imgur.com/cyEEJiw.png" width="240px">
 
 By the end of this tutorial you will have built a web app which will allow you to add random memes, upvote and downvote them, all from React. It will look just like the image you see to the right :D
