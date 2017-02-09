@@ -152,6 +152,20 @@ this.state = memes[Math.floor(Math.random() * memes.length)];
 ```
 
 # Step 3: The Mapping of the Memes [(codepen)](http://codepen.io/noahpresler/pen/YNvyGG?editors=1010#0)
+
+Next step: let's leverage the Meme component to display multiple memes with minimal code duplication.
+
+For loops are so last decade.  Instead of looping over state to access all the memes in our meme variable, we take an array and a function and apply the function to every object in the array. This is called a map. Mapping doesn’t alter the original array, it returns a new array.  We can do this with an arrow, say whaaa?
+
+```js
+this.state.memes.map(meme => <Meme caption={meme.caption} url={meme.url} }/>)
+```
+
+Once again, this is saying "for each meme in our variable, map it to the matching meme compomnenet and display it in my browser".
+
+When you click run, you should now see a whole feed of memes! Woohoo! 
+
+
 # Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
 # Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
