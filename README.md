@@ -264,6 +264,12 @@ However, in react, we use `this.setState()` to update our state. This function u
   }}>Downvotes – {this.state.downs}</a>
 ```
 
+When you run, you'll find that a click on the upvote udpates state AND updates the UI. What's going on under the hood is 
+- Each key in the object passed to `setState` is overwritten in state
+- In this case `this.state.ups` becomes `this.state.ups + 1`
+- The render function is called again, state has been updated, and therefore we see the labels on our buttons incrament! 
+
+Nice work! 
 
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
