@@ -88,8 +88,21 @@ React handles data through the state variable.  Each React component has its own
 
 We can now access the data in this component by typing “this.state” followed by the names of the values in the meme variable.  To access the image link, type “this.state.url” and to access the caption, type “this.state.caption”
 
+Now lets render a meme instead of hello world! To do this we will use React's special Javascript - JSX. JSX is a javascript preprocessor that lets us place HTML in our javascript.  You can use React without JSX, but JSX makes things a lot more elegant. Inside the HTML snippets, we’ll use {} the curly braces to inject javascript code inside the HTML snippets. 
 
+We will create a meme div, with an h1 tag for the caption and an img tag for the meme. We will set the content using `this.state` inside of the {} curly braces to inject our javascript. 
 
+Edit the render function as follows:
+```
+render() {
+    return (
+      <div className="meme">
+        <h1>{this.state.caption}</h1>
+        <img src={this.state.url}/>
+      </div>
+    );
+  }
+```
 
 
 # Step 2: The Meme Component
