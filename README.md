@@ -36,6 +36,24 @@ When you click run, you'll notice that the bottom portion of the window, the equ
 
 Let's go over how this works. 
 
+First, checkout our 'App Component'
+
+```
+class App extends React.Component {
+  render() {
+    return (
+      <p>Hello World</p>
+    );
+  }
+}
+```
+
+Componenets are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
+
+They key function for this step is the ```render``` function inside. This posts the HTML that is returned to the DOM and thus your browser when called. 
+
+The render function is called whenever the component is initially rendered and whenver state/props change (we will get into this part later!).
+
 # Step 1: My First Meme
 # Step 2: The Meme Component
 # Step 3: The Mapping of the Memes
