@@ -244,15 +244,7 @@ Inside the on click we use an arrow function to succinctly define a function tha
 ###Setting State
 For our purposes, when one of these links is clicked, we want to change the number of upvotes from its previous value to its previous value plus one. 
 
-In **pseudo code**: 
-
-```
-onClick => (
-  state = state + 1 
-)
-```
-
-However, in react, we use `this.setState()` to update our state. This function updates the fields specified in the object passed as a parameter in state. On top of this, it triggers a re-render and UI updates. So we update the links as follows:
+However, in react, we use `this.setState()` to update our state. **Do not do this.state = ...**. This special function updates the fields specified in the object passed as a parameter in state. On top of this, it triggers a re-render and UI updates. So we update the links as follows:
 
 ```js
 <a className="up" onClick={function(){
@@ -263,6 +255,8 @@ However, in react, we use `this.setState()` to update our state. This function u
     this.setState({downs: this.state.downs + 1})
   }}>Downvotes – {this.state.downs}</a>
 ```
+
+###Run & Recap
 
 When you run, you'll find that a click on the upvote udpates state AND updates the UI. What's going on under the hood is 
 - Each key in the object passed to `setState` is overwritten in state
