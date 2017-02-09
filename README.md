@@ -159,6 +159,12 @@ this.state = memes[Math.floor(Math.random() * memes.length)];
 
 Next step: let's leverage the Meme component to display multiple memes with minimal code duplication.
 
+Let's update the state of `App` to be all of the memes.
+
+```js
+this.state = {memes: memes};
+```
+
 For loops are so last decade.  Instead of looping over state to access all the memes in our meme variable, we take an array and a function and apply the function to every object in the array. This is called a map. Mapping doesn’t alter the original array, it returns a new array.  We can do this with an arrow, say whaaa?
 
 ```js
@@ -185,6 +191,38 @@ When you click run, you should now see a whole feed of memes! Woohoo!
 
 
 # Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
+
+### Up/Down State
+Since Meme is its own componenet, we can now add state to it. Our goal is to store the number of upvotes and downvotes.
+Just like before we will use the constructor to do this in _in the meme component_
+
+```js
+  constructor(props) {
+    super(props)
+    this.state = {ups: 0, downs: 0};
+  }
+```
+
+Here you see that state is a dictionary/json object. It has `ups` and `downs` as keys with integers (defaulting to 0) as values. 
+
+### Adding Buttons & Displaying Values
+We will now add to buttons - an upvote and downvote button - which display these state variables. Once more, we use the {} curly braces to inject the state into the HTML.
+
+```js
+render() {
+  return (
+    <div className="meme">
+      <h1>{this.props.caption}</h1>
+      <img src={this.props.url}/>
+      <a className="up">Upvotes – {this.state.ups}</a>
+      <a className="down">Downvotes – {this.state.downs}</a>
+    </div>
+  )
+}
+```
+
+
+
 # Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
