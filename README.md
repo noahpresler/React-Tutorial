@@ -29,7 +29,7 @@ In the JS side, click the chevron next to the line ```let memes = ....``` to col
 
 Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so just be sure to use our class names :)
 
-# Step 0: Hello World
+# Step 0: Hello World [(codepen)](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
 
 ###Fork the Code Pen! 
 
