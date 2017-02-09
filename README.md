@@ -50,9 +50,19 @@ class App extends React.Component {
 
 Componenets are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
 
-They key function for this step is the ```render``` function inside. This posts the HTML that is returned to the DOM and thus your browser when called. 
+They key function for this step is the ```render``` function inside. This returns the HTML that will later get posted to the DOM and displayed in your borwser. 
 
 The render function is called whenever the component is initially rendered and whenver state/props change (we will get into this part later!).
+
+So when does it actually get rendered and displayed to the browser? The very last line:
+
+```
+ReactDOM.render(<App />, document.getElementById('app'));
+```
+
+This renders the App component into the element with id 'app', the only tag we have for our HTML! 
+
+_fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag**_
 
 # Step 1: My First Meme
 # Step 2: The Meme Component
