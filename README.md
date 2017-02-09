@@ -43,7 +43,7 @@ Let's go over how this works.
 
 First, checkout our 'App Component'
 
-```
+```javascript
 class App extends React.Component {
   render() {
     return (
@@ -65,7 +65,7 @@ The render function is called whenever the component is initially rendered and w
 
 So when does it actually get rendered and displayed to the browser? The very last line:
 
-```
+```js
 ReactDOM.render(<App />, document.getElementById('app'));
 ```
 
@@ -77,7 +77,7 @@ _fun fact: look at how we tell the render call to render the App componenet. By 
 
 React handles data through the state variable.  Each React component has its own state.  We’ll add a constructor setting the initial state. Lets initialize it to the first element in the variable ```memes```.
 
-```
+```js
 //constructor just like in java!
   //sets up initial state in this.state = 
   constructor(props) {
