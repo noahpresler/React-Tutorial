@@ -266,4 +266,23 @@ When you run, you'll find that a click on the upvote udpates state AND updates t
 Nice work! 
 
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
+Really great - your meme componenet is done. Next, let's make this feed more dynamic by heading back to the App componenet. 
+
+We will now add a button which onClick will add a new random meme to our feed. 
+
+To do this, we will use the onClick attribute you just learned about, the special `setState` function, and a special url that returns random images (http://lorempixel.com/300/200/). 
+
+
+Your code shoul look like the following:
+```
+<a className="add" onClick={() => { 
+      this.setState({memes: this.state.memes.concat({
+                      url: 'http://lorempixel.com/300/200/',
+                      caption: 'Look! A new Meme!'
+                    })})
+    }}>Add a Meme!
+</a>
+```
+
+
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
