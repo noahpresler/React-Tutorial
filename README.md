@@ -158,10 +158,24 @@ Next step: let's leverage the Meme component to display multiple memes with mini
 For loops are so last decade.  Instead of looping over state to access all the memes in our meme variable, we take an array and a function and apply the function to every object in the array. This is called a map. Mapping doesn’t alter the original array, it returns a new array.  We can do this with an arrow, say whaaa?
 
 ```js
-this.state.memes.map(meme => <Meme caption={meme.caption} url={meme.url} }/>)
+this.state.memes.map(meme => <Meme caption={meme.caption} url={meme.url}/>)
 ```
 
 Once again, this is saying "for each meme in our variable, map it to the matching meme compomnenet and display it in my browser".
+
+Your App render function will then be:
+
+```js
+render() {
+  return (
+    <div>
+      {
+        this.state.memes.map(meme => <Meme caption={meme.caption} url={meme.url}/>)
+      }
+    </div>
+  );
+}
+```
 
 When you click run, you should now see a whole feed of memes! Woohoo! 
 
