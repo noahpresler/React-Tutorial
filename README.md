@@ -62,7 +62,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 This renders the App component into the element with id 'app', the only tag we have for our HTML! 
 
-_fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag**_
+_fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag <App />**_
 
 # Step 1: My First Meme
 # Step 2: The Meme Component
