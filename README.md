@@ -273,7 +273,7 @@ We will now add a button which onClick will add a new random meme to our feed.
 To do this, we will use the onClick attribute you just learned about, the special `setState` function, and a special url that returns random images (http://lorempixel.com/300/200/). 
 
 
-Your code shoul look like the following:
+Your code should look like the following:
 ```
 <a className="add" onClick={() => { 
       this.setState({memes: this.state.memes.concat({
