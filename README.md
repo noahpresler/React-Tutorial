@@ -224,5 +224,46 @@ After running, you'll see a green and red button. They should have zeros next to
 We will make those functional in the next step! 
 
 # Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
+
+We will now add onClick events to the buttons to trigger changes to the ups/downs state. 
+
+###onClick Handler
+
+An onClick event is declared as a simple attribute on any HTML tag like so: 
+
+```js
+<a onClick={() => {...some js here...}}
+```
+
+Inside the on click we use an arrow function to succinctly define a function that will trigger upon the click of that element. This is the same as:
+
+```js
+<a onClick={function(){...some js here...}}
+```
+
+###Setting State
+For our purposes, when one of these links is clicked, we want to change the number of upvotes from its previous value to its previous value plus one. 
+
+In **pseudo code**: 
+
+```
+onClick => (
+  state = state + 1 
+)
+```
+
+However, in react, we use `this.setState()` to update our state. This function updates the fields specified in the object passed as a parameter in state. On top of this, it triggers a re-render and UI updates. So we update the links as follows:
+
+```js
+<a className="up" onClick={function(){
+            this.setState({ups: this.state.ups + 1})
+          }}>Upvotes – {this.state.ups}</a>
+        
+<a className="down" onClick={() => {
+    this.setState({downs: this.state.downs + 1})
+  }}>Downvotes – {this.state.downs}</a>
+```
+
+
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
