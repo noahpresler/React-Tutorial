@@ -9,7 +9,6 @@ We have everything set up for you in a collection of CodePens. If you ever get l
 
 Here are the CodePens for **future** reference (keep following along for now): 
 - <a href="http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0" target="_blank">Step 0: Hello World!</a>
-- 
 - [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
 - [Step 1: My First Meme](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 - [Step 2: The Meme Component](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
