@@ -274,7 +274,7 @@ To do this, we will use the onClick attribute you just learned about, the specia
 
 
 Your code should look like the following:
-```
+```js
 <a className="add" onClick={() => { 
       this.setState({memes: this.state.memes.concat({
                       url: 'http://lorempixel.com/300/200/',
