@@ -30,6 +30,9 @@ In the JS side, click the chevron next to the line ```let memes = ....``` to col
 Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so just be sure to use our class names :)
 
 # Step 0: Hello World
+
+###Fork the Code Pen! 
+
 Click on fork in the top right of the CodePen UI. This will create your own version of this pen for you to access later! Click on the title "Step 0: Hello World" to rename it. 
 
 When you click run, you'll notice that the bottom portion of the window, the equivalent of a browser, is filled with grey and the words "Hello World". 
