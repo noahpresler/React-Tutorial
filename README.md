@@ -71,6 +71,24 @@ This renders the App component into the element with id 'app', the only tag we h
 _fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag ```<App />```**_
 
 # Step 1: My First Meme
+
+React handles data through the state variable.  Each React component has its own state.  We’ll add a constructor setting the initial state. Lets initialize it to the first element in the variable ```memes```.
+
+```
+//constructor just like in java!
+  //sets up initial state in this.state = 
+  constructor(props) {
+    super(props)
+    this.state = memes[0];
+  }
+```
+
+We can now access the data in this component by typing “this.state” followed by the names of the values in the meme variable.  To access the image link, type “this.state.url” and to access the caption, type “this.state.caption”
+
+
+
+
+
 # Step 2: The Meme Component
 # Step 3: The Mapping of the Memes
 # Step 4: Upvotes and Downvotes
