@@ -93,7 +93,7 @@ Now lets render a meme instead of hello world! To do this we will use React's sp
 We will create a meme div, with an h1 tag for the caption and an img tag for the meme. We will set the content using `this.state` inside of the {} curly braces to inject our javascript. 
 
 Edit the render function as follows:
-```
+```js
 render() {
     return (
       <div className="meme">
@@ -103,6 +103,8 @@ render() {
     );
   }
 ```
+
+Run the code, and bang! You did it! :D
 
 
 # Step 2: The Meme Component
