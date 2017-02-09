@@ -270,10 +270,16 @@ Really great - your meme componenet is done. Next, let's make this feed more dyn
 
 We will now add a button which onClick will add a new random meme to our feed. 
 
-To do this, we will use the onClick attribute you just learned about, the special `setState` function, and a special url that returns random images (http://lorempixel.com/300/200/). 
+To do this, we will use the onClick attribute you just learned about, the special `setState` function, and a special url that returns random images (http://lorempixel.com/300/200/).
 
+Here's how it comes together:
+- onClick we need to pass a new list of memes to overwrite the `memes` key in state. 
+- This list should include all the old memes plus one new meme.
+- We can create this new array using concat. ```this.state.memes.concat({url: 'http://lorempixel.com/300/200/' ,caption: 'Look! A new Meme!'})```
+- Concat returns the old array with the new meme appendend (with a random img and a 'Look! A new Meme! caption)
+- Sate gets updated, and just like last time a render is called so the UI updates! 
 
-Your code should look like the following:
+To add the button your code should look like the following:
 ```js
 <a className="add" onClick={() => { 
       this.setState({memes: this.state.memes.concat({
