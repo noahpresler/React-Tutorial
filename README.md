@@ -111,6 +111,46 @@ render() {
 Run the code, and bang! You did it! :D
 
 # Step 2: The Meme Component [(codepen)](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
+
+This is great, but when we want to display more than one meme and adding functinoality like upvoting/downvoting each meme, we'll want to create a component just for it.  There's no point in writing it each time. 
+
+### A New Component
+
+So just like the App Component, we'll create a Meme Component that has the render function from `App`
+
+```js
+render() {
+  return (
+    <div className="meme">
+      <h1>{this.props.caption}</h1>
+      <img src={this.props.url}/>
+    </div>
+  )
+}
+```
+
+Note how we changed the way we referenced caption and url.  Instead of using `this.state`, we used `this.props`.  Props are parameters that are passed to the component.  We will pass the props in from the App Component.
+
+### Passing Props
+
+Just like how we used a custom HTML tag for `<App />`, we'll use a custom HTML tag for our Meme Component, `<Meme />`.  Inside our `<App />` render function, we'll replace the HTML with this plus two props passed like normal HTML attributes.  
+
+```js
+render() {
+  return (
+    <Meme caption={this.state.caption} url={this.state.url} />
+  );
+}
+```
+
+### Adding Variety
+
+When you run this, everything should look the same as before, so lets add some variety by setting the initial state to a random meme.  
+
+```js
+this.state = memes[Math.floor(Math.random() * memes.length)];
+```
+
 # Step 3: The Mapping of the Memes [(codepen)](http://codepen.io/noahpresler/pen/YNvyGG?editors=1010#0)
 # Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
 # Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
