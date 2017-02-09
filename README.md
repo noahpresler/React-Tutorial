@@ -220,8 +220,8 @@ render() {
   )
 }
 ```
-
-
+After running, you'll see a green and red button. They should have zeros next to them since we defaulted the counts to 0. 
+We will make those functional in the next step! 
 
 # Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
