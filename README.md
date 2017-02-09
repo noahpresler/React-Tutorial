@@ -73,7 +73,7 @@ This renders the App component into the element with id 'app', the only tag we h
 
 _fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag ```<App />```**_
 
-# Step 1: My First Meme
+# Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 
 React handles data through the state variable.  Each React component has its own state.  We’ll add a constructor setting the initial state. Lets initialize it to the first element in the variable ```memes```.
 
@@ -110,10 +110,9 @@ render() {
 
 Run the code, and bang! You did it! :D
 
-
-# Step 2: The Meme Component
-# Step 3: The Mapping of the Memes
-# Step 4: Upvotes and Downvotes
-# Step 5: Setting State & OnClick
-# Step 6: Adding New Memes
-# Step 7: React LifeCycle & ComponenetDidUpdate
+# Step 2: The Meme Component [(codepen)](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
+# Step 3: The Mapping of the Memes [(codepen)](http://codepen.io/noahpresler/pen/YNvyGG?editors=1010#0)
+# Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
+# Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
+# Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
+# Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
