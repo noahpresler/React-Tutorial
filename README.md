@@ -22,7 +22,7 @@ Here are the CodePens for **future** reference (keep following along for now):
 <img align="right" src="http://i.imgur.com/WzcOh9d.png" width="350px">
 
 Open up [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0) and have a look around.
-It should look like the screenshot to the right.
+It should look like the screenshot to the right.  <a href="http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0" target="_blank">Step 0: Hello World!</a>
 
 On the left you'll see HTML, and on the right is Javascript – through this whole application you'll actually never change the HTML, we will create this all purely from Javascript.
 
