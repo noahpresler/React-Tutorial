@@ -110,6 +110,10 @@ render() {
 
 Run the code, and bang! You did it! :D
 
+### class v className
+
+Because class is a reserved word in javascript and can only be used for defining a new class in javascript, we'll use `className` to define classes for our HTML elements.  Be sure to use our classNames for free CSS :-)
+
 # Step 2: The Meme Component [(codepen)](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
 
 This is great, but when we want to display more than one meme and adding functinoality like upvoting/downvoting each meme, we'll want to create a component just for it.  There's no point in writing it each time. 
