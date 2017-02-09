@@ -36,6 +36,8 @@ When you click run, you'll notice that the bottom portion of the window, the equ
 
 Let's go over how this works. 
 
+### App Component
+
 First, checkout our 'App Component'
 
 ```
@@ -50,9 +52,13 @@ class App extends React.Component {
 
 Componenets are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
 
+### The Component's Render Function
+
 They key function for this step is the ```render``` function inside. This returns the HTML that will later get posted to the DOM and displayed in your borwser. 
 
 The render function is called whenever the component is initially rendered and whenver state/props change (we will get into this part later!).
+
+### Inserting the App into the DOM
 
 So when does it actually get rendered and displayed to the browser? The very last line:
 
