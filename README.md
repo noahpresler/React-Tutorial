@@ -8,7 +8,6 @@ By the end of this tutorial you will have built a web app which will allow you t
 We have everything set up for you in a collection of CodePens. If you ever get lost or confused, you can take a look at the code pen with the solution for that step or just use it to go forward and follow along.
 
 Here are the CodePens for **future** reference (keep following along for now): 
-- <a href="http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0" target="_blank">Step 0: Hello World!</a>
 - [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
 - [Step 1: My First Meme](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 - [Step 2: The Meme Component](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
@@ -22,7 +21,7 @@ Here are the CodePens for **future** reference (keep following along for now):
 <img align="right" src="http://i.imgur.com/WzcOh9d.png" width="350px">
 
 Open up [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0) and have a look around.
-It should look like the screenshot to the right.  <a href="http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0" target="_blank">Step 0: Hello World!</a>
+It should look like the screenshot to the right.
 
 On the left you'll see HTML, and on the right is Javascript – through this whole application you'll actually never change the HTML, we will create this all purely from Javascript.
 
