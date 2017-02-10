@@ -290,5 +290,40 @@ To add the button your code should look like the following:
 </a>
 ```
 
-
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
+
+## Beyond Render
+
+In this tutorial we have focued on React Components. All of our components have extended `React.Component` and as a result we gained the capabilities of `render()` and `setState`. 
+
+In fact, `render()` has been the only way which we have updated the UI.  
+
+However, React Components have several such methods which form **The React Lifecycle**.
+
+Each component has several "lifecycle methods" that you can override to run code at particular times in the process. Methods prefixed with **will** are called right before something happens, and methods prefixed with **did** are called right after something happens.
+
+The [React Documentation](https://facebook.github.io/react/docs/react-component.html) details the methods: 
+
+<img align="left" src="http://i.imgur.com/44UAknj.png" />
+
+##ComponentDidUpdate
+
+Let's give one of these lifecycle methods a spin.
+
+The method `componentDidUpdate` is called right after an update occurs to a component. That is: when `this.props` or `this.state` is changed. 
+
+**Pop quiz: where in the App componenet does this occur?**
+Answer: when we add a new Meme - in this instance the state is updated with an additional meme in the array. 
+
+So, for our foray into this lifecycle method, let's have the component scroll down to the newly added array when this occurs! 
+
+We will use simple JQuery to do so: 
+```
+componentDidUpdate(prevProps, prevState) {
+  $('body').scrollTop($('body').prop("scrollHeight")); 
+}
+```
+
+Give it a run - if all is well, you'll see that when the App component gets updated (When you click the add meme button) it scrolls to the new one :D
+
+# Afterword
