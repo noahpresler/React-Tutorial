@@ -25,7 +25,7 @@ It should look like the screenshot to the right.
 
 On the left you'll see HTML, and on the right is Javascript – through this whole application you'll actually never change the HTML, we will create this all purely from Javascript.
 
-In the JS side, click the chevron next to the line ```let memes = ....``` to collapse that variable so it takes up less space. It is a list of memes we will use later in the tutorial, but you will never edit it, so keep it collapsed for ease of coding.
+In the JS side, click the chevron <i class="fa fa-caret-down" aria-hidden="true"></i> next to the line ```let memes = ....``` to collapse that variable so it takes up less space. It is a list of memes we will use later in the tutorial, but you will never edit it, so keep it collapsed for ease of coding.
 
 Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so just be sure to use our class names :)
 
@@ -71,7 +71,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 This renders the App component into the element with id 'app', the only tag we have for our HTML! 
 
-_fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag ```<App />```**_
+_Fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag ```<App />```**_
 
 # Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 
