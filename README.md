@@ -332,12 +332,12 @@ Give it a run - if all is well, you'll see that when the App component gets upda
 Good luck and great work on the Tutorial. 
 
 ####To learn more: 
-Learn More React: https://egghead.io/courses/react-fundamentals
-Learn Redux: https://egghead.io/courses/getting-started-with-redux
+- Learn More React: https://egghead.io/courses/react-fundamentals
+- Learn Redux: https://egghead.io/courses/getting-started-with-redux
 
 ####What's Redux? 
-Redux is a methodology for React development in which there is one global state store rather than a store in each component.
+- Redux is a methodology for React development in which there is one global state store rather than a store in each component.
 
 ####How to setup a React enviroment locally:
-React with Webpack: http://survivejs.com/webpack/advanced-techniques/configuring-react/
-React with Gulp: https://jonsuh.com/blog/integrating-react-with-gulp/
+- React with Webpack: http://survivejs.com/webpack/advanced-techniques/configuring-react/
+- React with Gulp: https://jonsuh.com/blog/integrating-react-with-gulp/
