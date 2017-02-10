@@ -55,6 +55,8 @@ class App extends React.Component {
 
 Componenets are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
 
+_HTML TIP: `<p>` is for paragraphs_
+
 ### The Component's Render Function
 
 The key function for this step is the ```render``` function inside. This returns the HTML that will later get posted to the DOM and displayed in your browser. 
@@ -110,6 +112,7 @@ render() {
     );
   }
 ```
+_HTML TIP: `<img>` is for images, `<h1>` is for headers_
 
 Run the code, and bang! You did it! :D
 
@@ -223,6 +226,8 @@ render() {
   )
 }
 ```
+_HTML TIP: `<a>` is for links_
+
 After running, you'll see a green and red button. They should have zeros next to them since we defaulted the counts to 0. 
 We will make those functional in the next step! 
 
@@ -320,7 +325,7 @@ Answer: when we add a new Meme - in this instance the state is updated with an a
 
 So, for our foray into this lifecycle method, let's have the component scroll down to the newly added array when this occurs! 
 
-We will use simple JQuery to do so: 
+We will use simple JQuery to do so (if you don't know JQuery don't worry, it simply scrolls to the bottom of the page): 
 ```
 componentDidUpdate(prevProps, prevState) {
   $('body').scrollTop($('body').prop("scrollHeight")); 
