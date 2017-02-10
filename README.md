@@ -327,3 +327,4 @@ componentDidUpdate(prevProps, prevState) {
 Give it a run - if all is well, you'll see that when the App component gets updated (When you click the add meme button) it scrolls to the new one :D
 
 # Afterword
+
