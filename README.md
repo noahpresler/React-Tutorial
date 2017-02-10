@@ -57,11 +57,11 @@ Componenets are the core of React. React components let you split the UI into in
 
 ### The Component's Render Function
 
-The key function for this step is the ```render``` function inside. This returns the HTML that will later get posted to the DOM and displayed in your borwser. 
+The key function for this step is the ```render``` function inside. This returns the HTML that will later get posted to the DOM and displayed in your browser. 
 
 The render function is called whenever the component is initially rendered and whenver state/props change (we will get into this part later!).
 
-_What's the **DOM**? **D**ocument **O**bject **M**odel. It's the browsers model of all html of elements, properties, and events. The HTML DOM is a standard for how to get, change, add, or delete HTML elements._
+_What's the **DOM**? **D**ocument **O**bject **M**odel. It's the browser's model of all html of elements, properties, and events. The HTML DOM is a standard for how to get, change, add, or delete HTML elements._
 
 ### Inserting the App into the DOM
 
@@ -73,14 +73,15 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 This renders the App component into the element with id 'app', the only tag we have for our HTML! 
 
-_Fun fact: look at how we tell the render call to render the App componenet. By create React Componenet, **you just defined a custom HTML tag ```<App />```**_
+_Fun fact: look at how we tell the render call to render the App componenet. By creating a React Componenet, **you just defined a custom HTML tag ```<App />```**_
 
 # Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 
 React handles data through the state variable.  Each React component has its own state.  We’ll add a constructor setting the initial state. Lets initialize it to the first element in the variable ```memes```.
 
-### Setting Initial State
+### Setting Initial State 
 
+Add this constructor inside of the App class! 
 ```js
 //constructor just like in java!
   //sets up initial state in this.state = 
@@ -173,7 +174,7 @@ For loops are so last decade.  Instead of looping over state to access all the m
 this.state.memes.map(meme => <Meme caption={meme.caption} url={meme.url}/>)
 ```
 
-Once again, this is saying "for each meme in our variable, map it to the matching meme compomnenet and display it in my browser".
+Once again, this is saying "for each meme in our variable, map it to the matching meme componenet and display it in my browser".
 
 Your App render function will then be:
 
@@ -249,13 +250,13 @@ For our purposes, when one of these links is clicked, we want to change the numb
 However, in react, we use `this.setState()` to update our state. **Do not do this.state = ...**. This special function updates the fields specified in the object passed as a parameter in state. On top of this, it triggers a re-render and UI updates. So we update the links as follows:
 
 ```js
-<a className="up" onClick={function(){
-            this.setState({ups: this.state.ups + 1})
-          }}>Upvotes – {this.state.ups}</a>
-        
+<a className="up" onClick={() => {
+    this.setState({ups: this.state.ups + 1})
+}}>Upvotes – {this.state.ups}</a>
+
 <a className="down" onClick={() => {
     this.setState({downs: this.state.downs + 1})
-  }}>Downvotes – {this.state.downs}</a>
+}}>Downvotes – {this.state.downs}</a>
 ```
 
 ###Run & Recap
