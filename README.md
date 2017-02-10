@@ -61,6 +61,8 @@ The key function for this step is the ```render``` function inside. This returns
 
 The render function is called whenever the component is initially rendered and whenver state/props change (we will get into this part later!).
 
+_What's the **DOM**? **D**ocument **O**bject **M**odel. It's the browsers model of all html of elements, properties, and events. The HTML DOM is a standard for how to get, change, add, or delete HTML elements._
+
 ### Inserting the App into the DOM
 
 So when does it actually get rendered and displayed to the browser? The very last line:
