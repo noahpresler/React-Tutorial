@@ -294,7 +294,7 @@ To add the button your code should look like the following:
 
 # Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
 
-## Beyond Render
+### Beyond Render
 
 In this tutorial we have focued on React Components. All of our components have extended `React.Component` and as a result we gained the capabilities of `render()` and `setState`. 
 
@@ -308,7 +308,7 @@ The [React Documentation](https://facebook.github.io/react/docs/react-component.
 
 <img align="left" src="http://i.imgur.com/44UAknj.png" />
 
-##ComponentDidUpdate
+### ComponentDidUpdate
 
 Let's give one of these lifecycle methods a spin.
 
