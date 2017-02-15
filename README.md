@@ -295,7 +295,7 @@ Here's how it comes together:
 - Concat returns the old array with the new meme appendend (with a random img and a 'Look! A new Meme! caption)
 - Sate gets updated, and just like last time a render is called so the UI updates! 
 
-To add the button your code should look like the following:
+To add the button your code should look like the following (add this right before the map inside of render, inside the div which wraps the map:
 ```js
 <a className="add" onClick={() => { 
       this.setState({memes: this.state.memes.concat({
@@ -340,6 +340,7 @@ componentDidUpdate(prevProps, prevState) {
   $('body').scrollTop($('body').prop("scrollHeight")); 
 }
 ```
+Add this function inside of the App class.
 
 Give it a run - if all is well, you'll see that when the App component gets updated (When you click the add meme button) it scrolls to the new one :D
 
