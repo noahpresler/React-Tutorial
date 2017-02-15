@@ -53,7 +53,7 @@ class App extends React.Component {
 }
 ```
 
-Componenets are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
+Components are the core of React. React components let you split the UI into independent, reusable pieces, and think about each piece in isolation. React components can be defined by subclassing ```React.Component``` as you see we do with ```extends React.Component```.
 
 _HTML TIP: `<p>` is for paragraphs_
 
@@ -75,7 +75,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 This renders the App component into the element with id 'app', the only tag we have for our HTML! 
 
-_Fun fact: look at how we tell the render call to render the App componenet. By creating a React Componenet, **you just defined a custom HTML tag ```<App />```**_
+_Fun fact: look at how we tell the render call to render the App componenet. By creating a React Component, **you just defined a custom HTML tag ```<App />```**_
 
 # Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 
@@ -126,7 +126,13 @@ This is great, but when we want to display more than one meme and adding functin
 
 ### A New Component
 
-So just like the App Component, we'll create a Meme Component that has the render function from `App`
+So just like the App Component, we'll create a Meme Component.
+
+Once again, it should extend `React.component`:
+
+`class Meme extends React.Component`
+
+It will have the render function from `App` with two slight changes:
 
 ```js
 render() {
@@ -156,6 +162,8 @@ render() {
 ### Adding Variety
 
 When you run this, everything should look the same as before, so lets add some variety by setting the initial state to a random meme.  
+
+Update your constructor with: 
 
 ```js
 this.state = memes[Math.floor(Math.random() * memes.length)];
@@ -274,7 +282,7 @@ When you run, you'll find that a click on the upvote udpates state AND updates t
 Nice work! 
 
 # Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
-Really great - your meme componenet is done. Next, let's make this feed more dynamic by heading back to the App componenet. 
+Really great - your meme componenet is done. Next, let's make this feed more dynamic by heading back to the App component. 
 
 We will now add a button which onClick will add a new random meme to our feed. 
 
@@ -298,7 +306,8 @@ To add the button your code should look like the following:
 </a>
 ```
 
-# Step 7: React LifeCycle & ComponenetDidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
+# Step 7: React LifeCycle & 
+DidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
 
 ### Beyond Render
 
