@@ -306,8 +306,7 @@ To add the button your code should look like the following (add this right befor
 </a>
 ```
 
-# Step 7: React LifeCycle & 
-DidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
+# Step 7: React LifeCycle & DidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
 
 ### Beyond Render
 
