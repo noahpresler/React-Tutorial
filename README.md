@@ -1,7 +1,7 @@
 # Welcome – Here Is How This Shindig Will Go
 <img align="left" src="http://i.imgur.com/cyEEJiw.png" width="240px">
 
-By the end of this tutorial you will have built a web app which will allow you to add random memes, upvote and downvote them, all from React. It will look just like the image you see to the right :D
+By the end of this tutorial you will have built a web app which will allow you to add random memes, upvote and downvote them, all from React. It will look just like the image you see to the left :D
 
 **Best part is, you don't need to install anything!** It doesn't matter what OS you have – all you need is a browser.
 
@@ -293,7 +293,7 @@ Here's how it comes together:
 - This list should include all the old memes plus one new meme.
 - We can create this new array using concat. ```this.state.memes.concat({url: 'http://lorempixel.com/300/200/' ,caption: 'Look! A new Meme!'})```
 - Concat returns the old array with the new meme appendend (with a random img and a 'Look! A new Meme! caption)
-- Sate gets updated, and just like last time a render is called so the UI updates! 
+- State gets updated, and just like last time a render is called so the UI updates! 
 
 To add the button your code should look like the following (add this right before the map inside of render, inside the div which wraps the map:
 ```js
