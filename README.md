@@ -31,7 +31,7 @@ Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so j
 
 # Step 0: Hello World [(codepen)](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
 
-###Fork the Code Pen! 
+### Fork the Code Pen! 
 
 Click on fork in the top right of the CodePen UI. This will create your own version of this pen for you to access later! Click on the title "Step 0: Hello World" to rename it. 
 
@@ -243,7 +243,7 @@ We will make those functional in the next step!
 
 We will now add onClick events to the buttons to trigger changes to the ups/downs state. 
 
-###onClick Handler
+### onClick Handler
 
 An onClick event is declared as a simple attribute on any HTML tag like so: 
 
@@ -257,7 +257,7 @@ Inside the on click we use an arrow function to succinctly define a function tha
 <a onClick={function(){...some js here...}}
 ```
 
-###Setting State
+### Setting State
 For our purposes, when one of these links is clicked, we want to change the number of upvotes from its previous value to its previous value plus one. 
 
 However, in react, we use `this.setState()` to update our state. **Do not do this.state = ...**. This special function updates the fields specified in the object passed as a parameter in state. On top of this, it triggers a re-render and UI updates. So we update the links as follows:
@@ -272,7 +272,7 @@ However, in react, we use `this.setState()` to update our state. **Do not do thi
 }}>Downvotes – {this.state.downs}</a>
 ```
 
-###Run & Recap
+### Run & Recap
 
 When you run, you'll find that a click on the upvote udpates state AND updates the UI. What's going on under the hood is 
 - Each key in the object passed to `setState` is overwritten in state
@@ -346,13 +346,13 @@ Give it a run - if all is well, you'll see that when the App component gets upda
 # Afterword
 Good luck and great work on the Tutorial. 
 
-####To learn more: 
+#### To learn more: 
 - Learn More React: https://egghead.io/courses/react-fundamentals
 - Learn Redux: https://egghead.io/courses/getting-started-with-redux
 
-####What's Redux? 
+#### What's Redux? 
 - Redux is a methodology for React development in which there is one global state store rather than a store in each component.
 
-####How to setup a React enviroment locally:
+#### How to setup a React enviroment locally:
 - React with Webpack: http://survivejs.com/webpack/advanced-techniques/configuring-react/
 - React with Gulp: https://jonsuh.com/blog/integrating-react-with-gulp/
