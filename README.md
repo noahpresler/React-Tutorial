@@ -207,7 +207,7 @@ When you click run, you should now see a whole feed of memes! Woohoo!
 # Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
 
 ### Up/Down State
-Since Meme is its own componenet, we can now add state to it. Our goal is to store the number of upvotes and downvotes.
+Since Meme is its own component, we can now add state to it. Our goal is to store the number of upvotes and downvotes.
 Just like before we will use the constructor to do this in _in the meme component_
 
 ```js
