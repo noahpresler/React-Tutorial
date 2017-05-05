@@ -75,7 +75,7 @@ ReactDOM.render(<App />, document.getElementById('app'));
 
 This renders the App component into the element with id 'app', the only tag we have for our HTML! 
 
-_Fun fact: look at how we tell the render call to render the App componenet. By creating a React Component, **you just defined a custom HTML tag ```<App />```**_
+_Fun fact: look at how we tell the render call to render the App component. By creating a React Component, **you just defined a custom HTML tag ```<App />```**_
 
 # Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
 
@@ -328,7 +328,7 @@ Let's give one of these lifecycle methods a spin.
 
 The method `componentDidUpdate` is called right after an update occurs to a component. That is: when `this.props` or `this.state` is changed. 
 
-**Pop quiz: where in the App componenet does this occur?**
+**Pop quiz: where in the App component does this occur?**
 Answer: when we add a new Meme - in this instance the state is updated with an additional meme in the array. 
 
 So, for our foray into this lifecycle method, let's have the component scroll down to the newly added array when this occurs! 
