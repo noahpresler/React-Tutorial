@@ -8,19 +8,19 @@ By the end of this tutorial you will have built a web app which will allow you t
 We have everything set up for you in a collection of CodePens. If you ever get lost or confused, you can take a look at the code pen with the solution for that step or just use it to go forward and follow along.
 
 Here are the CodePens for **future** reference (keep following along for now): 
-- [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
-- [Step 1: My First Meme](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
-- [Step 2: The Meme Component](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
-- [Step 3: The Mapping of the Memes](http://codepen.io/noahpresler/pen/YNvyGG?editors=1010#0)
-- [Step 4: Upvotes and downvotes](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
-- [Step 5: Setting state, onclicks](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
-- [Step 6: Adding New Memes](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
-- [Step 7: LifeCycle & Component Did Update](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
+- [Step 0: Hello World!](https://codepen.io/kristinyim/pen/RvqKXV?editors=1010)
+- [Step 1: My First Meme](https://codepen.io/kristinyim/pen/BMGpBz?editors=1010)
+- [Step 2: The Meme Component](https://codepen.io/kristinyim/pen/MLzJgr?editors=1010)
+- [Step 3: The Mapping of the Memes](https://codepen.io/kristinyim/pen/jdQyVa?editors=1010)
+- [Step 4: Upvotes and downvotes](https://codepen.io/kristinyim/pen/daQNNy?editors=1010)
+- [Step 5: Setting state, onclicks](https://codepen.io/kristinyim/pen/bzQggR?editors=1010)
+- [Step 6: Adding New Memes](https://codepen.io/kristinyim/pen/JxeEEq?editors=1010)
+- [Step 7: LifeCycle & Component Did Update](https://codepen.io/kristinyim/pen/aXQpyx?editors=1010)
 
 # Quick Tour of Code Pen
 <img align="right" src="http://i.imgur.com/WzcOh9d.png" width="350px">
 
-Open up [Step 0: Hello World!](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0) and have a look around.
+Open up [Step 0: Hello World!](https://codepen.io/kristinyim/pen/RvqKXV?editors=1010) and have a look around.
 It should look like the screenshot to the right.
 
 On the left you'll see HTML, and on the right is Javascript – through this whole application you'll actually never change the HTML, we will create this all purely from Javascript.
@@ -29,7 +29,7 @@ In the JS side, click the chevron <i class="fa fa-caret-down" aria-hidden="true"
 
 Swag, that's the whole setup. Time for step 0! All the CSS is done for you, so just be sure to use our class names :)
 
-# Step 0: Hello World [(codepen)](http://codepen.io/noahpresler/pen/JEZdvz?editors=1010#0)
+# Step 0: Hello World [(codepen)](https://codepen.io/kristinyim/pen/RvqKXV?editors=1010)
 
 ### Fork the Code Pen! 
 
@@ -77,7 +77,7 @@ This renders the App component into the element with id 'app', the only tag we h
 
 _Fun fact: look at how we tell the render call to render the App component. By creating a React Component, **you just defined a custom HTML tag ```<App />```**_
 
-# Step 1: My First Meme [(codepen)](http://codepen.io/noahpresler/pen/egKNbL?editors=1010)
+# Step 1: My First Meme [(codepen)](https://codepen.io/kristinyim/pen/BMGpBz?editors=1010)
 
 React handles data through the state variable.  Each React component has its own state.  We’ll add a constructor setting the initial state. Lets initialize it to the first element in the variable ```memes```.
 
@@ -120,7 +120,7 @@ Run the code, and bang! You did it! :D
 
 Because class is a reserved word in javascript and can only be used for defining a new class in javascript, we'll use `className` to define classes for our HTML elements.  Be sure to use our classNames for free CSS 😊
 
-# Step 2: The Meme Component [(codepen)](http://codepen.io/noahpresler/pen/dNKYGG?editors=1010#0)
+# Step 2: The Meme Component [(codepen)](https://codepen.io/kristinyim/pen/MLzJgr?editors=1010)
 
 This is great, but when we want to display more than one meme and adding functinoality like upvoting/downvoting each meme, we'll want to create a component just for it.  There's no point in writing it each time. 
 
@@ -169,7 +169,7 @@ Update your constructor with:
 this.state = memes[Math.floor(Math.random() * memes.length)];
 ```
 
-# Step 3: The Mapping of the Memes [(codepen)](http://codepen.io/noahpresler/pen/YNvyGG?editors=1010#0)
+# Step 3: The Mapping of the Memes [(codepen)](https://codepen.io/kristinyim/pen/jdQyVa?editors=1010)
 
 Next step: let's leverage the Meme component to display multiple memes with minimal code duplication.
 
@@ -204,7 +204,7 @@ render() {
 When you click run, you should now see a whole feed of memes! Woohoo! 
 
 
-# Step 4: Upvotes and Downvotes [(codepen)](http://codepen.io/noahpresler/pen/NdzbXd?editors=1010)
+# Step 4: Upvotes and Downvotes [(codepen)](https://codepen.io/kristinyim/pen/daQNNy?editors=101)
 
 ### Up/Down State
 Since Meme is its own component, we can now add state to it. Our goal is to store the number of upvotes and downvotes.
@@ -239,7 +239,7 @@ _HTML TIP: `<a>` is for links_
 After running, you'll see a green and red button. They should have zeros next to them since we defaulted the counts to 0. 
 We will make those functional in the next step! 
 
-# Step 5: Setting State & OnClick [(codepen)](http://codepen.io/noahpresler/pen/OWEbvX?editors=1010)
+# Step 5: Setting State & OnClick [(codepen)](https://codepen.io/kristinyim/pen/bzQggR?editors=1010)
 
 We will now add onClick events to the buttons to trigger changes to the ups/downs state. 
 
@@ -281,7 +281,7 @@ When you run, you'll find that a click on the upvote udpates state AND updates t
 
 Nice work! 
 
-# Step 6: Adding New Memes [(codepen)](http://codepen.io/noahpresler/pen/EZRNEd?editors=1010 )
+# Step 6: Adding New Memes [(codepen)](https://codepen.io/kristinyim/pen/JxeEEq?editors=1010)
 Really great - your meme componenet is done. Next, let's make this feed more dynamic by heading back to the App component. 
 
 We will now add a button which onClick will add a new random meme to our feed. 
@@ -306,7 +306,7 @@ To add the button your code should look like the following (add this right befor
 </a>
 ```
 
-# Step 7: React LifeCycle & DidUpdate [(codepen)](http://codepen.io/noahpresler/pen/QdxGZM?editors=1010)
+# Step 7: React LifeCycle & DidUpdate [(codepen)](https://codepen.io/kristinyim/pen/aXQpyx?editors=1010)
 
 ### Beyond Render
 
