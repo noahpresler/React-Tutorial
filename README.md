@@ -336,7 +336,7 @@ So, for our foray into this lifecycle method, let's have the component scroll do
 We will use simple JQuery to do so (if you don't know JQuery don't worry, it simply scrolls to the bottom of the page): 
 ```
 componentDidUpdate(prevProps, prevState) {
-  $('body').scrollTop($('body').prop("scrollHeight")); 
+  $("html, body").animate({ scrollTop: $(document).height() }, 50);
 }
 ```
 Add this function inside of the App class.
